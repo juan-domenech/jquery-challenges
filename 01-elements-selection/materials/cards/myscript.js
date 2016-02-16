@@ -9,7 +9,7 @@ $( "h2" ).hover(
   function() {
     $( this ).css("background-color","lightblue");
   }, function() {
-    $( this ).css("background-color","white");
+    $( this ).removeAttr( 'style' );
   }
 );
 
@@ -17,7 +17,7 @@ $( "h2:first" ).hover(
   function() {
     $( this ).css("font-size","40px");
   }, function() {
-    $( this ).css("font-size","20px");
+    $( this ).removeAttr( 'style' );
   }
 );
 
@@ -25,7 +25,7 @@ $( ".bottom_button" ).hover(
   function() {
     $( 'body' ).css("background-color","black");
   }, function() {
-    $( 'body' ).css("background-color","white");
+    $( 'body' ).css("background-color","grey");
   }
 );
 
